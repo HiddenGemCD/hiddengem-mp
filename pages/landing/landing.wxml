@@ -1,0 +1,8 @@
+<!--pages/landing/landing.wxml-->
+<view class='title'>Landing Page</view>
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data>
+
+<!-- <button bindtap="goNext">Start now</button> -->
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" bindtap="goNext">授权登录</button>
+<view wx:else>请升级微信版本</view>

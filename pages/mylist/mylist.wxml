@@ -1,0 +1,18 @@
+<!--pages/mylist/mylist.wxml-->
+<text>My Lists</text>
+<button>Create New List</button>
+<button>Create New Card</button>
+
+<!-- <block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
+    <view class="card-outer-border">
+      <view class="card-header-item">
+          {{item.name}}
+      </view>
+      <view class="card-line"/>
+      <view class="card-body-item">
+        "{{item.description}}"
+      </view>
+      <button>edit</button>
+      <button>delete</button>
+    </view>
+</block> -->

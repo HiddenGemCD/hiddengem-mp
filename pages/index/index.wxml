@@ -1,0 +1,27 @@
+<!--index.wxml-->
+
+<!--https://developers.weixin.qq.com/miniprogram/dev/api/open-api/user-info/wx.getUserInfo.html -->
+<open-data type="userNickName"></open-data>
+<open-data type="userCity"></open-data>
+
+<button bindtap="goAllLists">View All List</button>
+<button bindtap="goMyLists">View MY List</button>
+<button bindtap="newCard">Create New Card</button>
+
+<!-- <button bindtap="#">View my posts</button>
+<button bindtap="#">Avatar link to lists</button> -->
+<!-- <view>Show Hottest Lists</view> -->
+
+<block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
+    <view class="card-outer-border">
+      <view class="card-header-item">
+          {{item.name}}
+      </view>
+      <view class="card-line"/>
+      <view class="card-body-item">
+        "{{item.description}}"
+      </view>
+      <button>edit</button>
+      <button>delete</button>
+    </view>
+</block>
