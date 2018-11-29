@@ -21,7 +21,6 @@
       <view class="card-body-item">
         "{{item.description}}"
       </view>
-      <button>edit</button>
-      <button>delete</button>
+      <text>user: "{{item.user_id}}"</text>
     </view>
 </block>

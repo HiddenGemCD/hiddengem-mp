@@ -1,0 +1,15 @@
+<!--pages/mylist/mylist.wxml-->
+<h2>THIS IS MY LISTS</h2>
+<button bindtap='newList'>Create New List</button>
+<button bindtap='newCard'>Create New Card</button>
+
+<block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
+    <view class="card-outer-border">
+      <view class="card-header-item">
+          {{itemsIndex}} | {{item.name}}
+      </view>
+      <view class="card-line"/>
+      <button bindtap='editList' data-id="{{itemsIndex}}">edit</button>
+      <button bindtap='deleteList'>delete</button>
+    </view>
+</block>

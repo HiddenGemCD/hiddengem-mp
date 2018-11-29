@@ -29,11 +29,11 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
-					"id": -1,
-					"name": "HomePage",
+					"id": 0,
+					"name": "Index",
 					"pathName": "pages/index/index",
 					"query": ""
 				},
@@ -46,7 +46,14 @@
 				{
 					"id": -1,
 					"name": "Landing",
-					"pathName": "pages/landing/landing"
+					"pathName": "pages/landing/landing",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "My List",
+					"pathName": "pages/list/mylist",
+					"query": ""
 				}
 			]
 		}

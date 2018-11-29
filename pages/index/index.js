@@ -14,24 +14,33 @@ Page({
       path: 'cards',
       success(res) {
         console.log(res)
-        page.setData({items : res.data.cards})
+        page.setData({ items: res.data.cards })
       }
     })
+    // wx.request({
+    //   url: 'http://localhost:3000/api/v1/cards',
+    //   header: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   success: (res) => {
+    //     console.log(333,res)
+    //   }
+    // })
   },
   goAllLists: function() {
     wx.navigateTo({
-      url: '/pages/list/list'
+      url: '/pages/list/index'
     })
   },
   goMyLists: function() {
     wx.navigateTo({
-      url: '/pages/mylist/mylist'
+      url: '/pages/list/mylist'
     })
   },
   newCard: function() {
     console.log('create new post...');
     wx.switchTab({
-      url: '/pages/post/post'
+      url: '/pages/card/new'
     })
   }
 })

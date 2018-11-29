@@ -1,0 +1,9 @@
+<!--pages/list/list.wxml-->
+<text>EXPLORE ALL LISTS</text>
+<block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
+  <view class="card-outer-border">
+    <view class="card-header-item">
+        {{item.name}}
+    </view>
+  </view>
+</block>

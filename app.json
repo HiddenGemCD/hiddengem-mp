@@ -1,10 +1,14 @@
-{
+{ 
   "pages":[
     "pages/landing/landing",
-    "pages/post/post",
+    "pages/card/new",
+    "pages/card/edit",
+    "pages/card/mycards",
     "pages/index/index",
-    "pages/list/list",
-    "pages/mylist/mylist"
+    "pages/list/index",
+    "pages/list/new",
+    "pages/list/edit",
+    "pages/list/mylist"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -23,8 +27,8 @@
       "iconPath": "/commons/assets/icons/home-unactive.png",
       "selectedIconPath": "/commons/assets/icons/home.png"
     },{
-      "pagePath": "pages/post/post",
-      "text": "post",
+      "pagePath": "pages/card/new",
+      "text": "Create Card",
       "iconPath": "/commons/assets/icons/post-unactive.png",
       "selectedIconPath": "/commons/assets/icons/post.png"
     }]

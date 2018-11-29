@@ -1,4 +1,4 @@
-// pages/list/list.js
+// pages/card/edit.js
 Page({
 
   /**

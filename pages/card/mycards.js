@@ -1,11 +1,11 @@
-// pages/mylist/mylist.js
+// pages/card/mycards.js
 Page({
 
   /**
    * Page initial data
    */
   data: {
-    items: []
+
   },
 
   /**
