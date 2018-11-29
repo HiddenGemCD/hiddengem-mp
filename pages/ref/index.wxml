@@ -1,10 +1,15 @@
-<!--index.wxml-->
+
+<!-- home -->
+
+<!-- head -->
+
+<!-- body -->
 <!-- bkg -->
 <image src='/images/appbkg.jpg' style='position: absolute; z-index: -10; width:100%;'></image>
 <!-- list headlines -->
 <text style='margin: 30px; font-size:13px; color:white; font-weight:bold;'>Lists</text>
 
-<a style='float:right; margin-right:30px; font-size:13px; color:white; font-weight:bold;'>View All</a>
+<text style='margin-left: 188px; font-size:13px; color:white; font-weight:bold;'>View All</text>
 
 <!-- List items -->
 
@@ -72,27 +77,3 @@
 <!-- button -->
 <button style='border-radius:50px; width: 45px; height: 45px; background-color: #6246FF; color: white; font-size:36px; font-weight:bold; line-height:40px; top: 11%; box-shadow: 0px 0.1px 4px grey; '>+</button>
 </view>
-<!--https://developers.weixin.qq.com/miniprogram/dev/api/open-api/user-info/wx.getUserInfo.html -->
-<open-data type="userNickName"></open-data>
-<open-data type="userCity"></open-data>
-
-<button bindtap="goAllLists">View All List</button>
-<button bindtap="goMyLists">View MY List</button>
-<button bindtap="newCard">Create New Card</button>
-
-<!-- <button bindtap="#">View my posts</button>
-<button bindtap="#">Avatar link to lists</button> -->
-<!-- <view>Show Hottest Lists</view> -->
-
-<block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
-    <view class="card-outer-border">
-      <view class="card-header-item">
-          {{item.name}}
-      </view>
-      <view class="card-line"/>
-      <view class="card-body-item">
-        "{{item.description}}"
-      </view>
-      <text>user: "{{item.user_id}}"</text>
-    </view>
-</block>

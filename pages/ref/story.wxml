@@ -1,0 +1,31 @@
+<!-- home -->
+
+<!-- head -->
+
+<!-- body -->
+<!-- bkg -->
+<image src='/images/appbkg.jpg' style='position: absolute; z-index: -10; width:100%;'></image>
+
+<view style='padding-top:40rpx;'/>
+
+<view style='display:flex; flex-wrap:wrap; justify-content:center;'>
+<block wx:for='{{ [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36] }}'>
+<view style='display:flex; margin:20rpx; justify-content:center; align-items:center; '>
+<view style='width:40vw; height:45rpx; background-color:white; border-radius:40rpx; box-shadow: 0px 0.2px 3px grey;'>
+
+<!-- list card content -->
+<view style='text-align:center; font-size:11px; color:black; font-weight:bold; margin:1px'>Hotpot Places</view>
+</view>
+
+</view>
+</block>
+</view>
+
+<view style='padding-top:150rpx;'/>
+
+
+<!-- footer -->
+<view style='position: fixed; left: 0; bottom: 0; width: 100%; height: 11%; background-color: #FBFCFC; color: grey; text-align: center; box-shadow: 0px 0.8px 0px #FF5050 inset;'>
+<!-- button -->
+<button style='border-radius:50px; width: 45px; height: 45px; background-color: #6246FF; color: white; font-size:36px; font-weight:bold; line-height:40px; top: 11%; box-shadow: 0px 0.1px 4px grey; '>+</button>
+</view>

@@ -8,7 +8,9 @@
     "pages/list/index",
     "pages/list/new",
     "pages/list/edit",
-    "pages/list/mylist"
+    "pages/list/mylist",
+    "pages/ref/index",
+    "pages/ref/story"
   ],
   "window":{
     "backgroundTextStyle":"light",

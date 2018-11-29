@@ -3,13 +3,13 @@
 <button bindtap='newList'>Create New List</button>
 <button bindtap='newCard'>Create New Card</button>
 
-<block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
+<block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="{{indexIndex}}">
     <view class="card-outer-border">
       <view class="card-header-item">
-          {{itemsIndex}} | {{item.name}}
+          {{item.id}} | {{item.name}}
       </view>
       <view class="card-line"/>
-      <button bindtap='editList' data-id="{{itemsIndex}}">edit</button>
+      <button bindtap='editList' id="{{item.id}}">edit</button>
       <button bindtap='deleteList'>delete</button>
     </view>
 </block>

@@ -10,7 +10,6 @@ Page({
     myRequest.get({
       path: 'lists',
       success(res) {
-        console.log(res)
         page.setData({ items: res.data.lists })
       }
     })
@@ -26,7 +25,7 @@ Page({
     })
   },
   editList: function(e){
-    const list_id = e.target.dataset.id;
+    const list_id = e.target.id;
     wx.navigateTo({
       url: '/pages/list/edit?id=' + list_id
     })

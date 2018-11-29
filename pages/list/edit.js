@@ -13,26 +13,26 @@ Page({
      });
     const user_id = this.data.user_id;
     const list_id = this.data.list_id;
+
     myRequest.get({
       path: 'lists/' + list_id,
       success(res) {
-        // console.log("GET LIST INFO")
-        // console.log(res.data.list)
         page.setData({
           name: res.data.list.name,
         });
       }
     });
-    console.log(this.data)
   },
   bindSubmit: function (e) {
     let page = this;
+    const user_id = this.data.user_id;
+    const list_id = this.data.list_id;
     wx.showToast({ title: 'Sending...', icon: 'loading', duration: 1000 })
     // Post new card to API
     myRequest.put({
       path: 'users/' + user_id + '/lists/' + list_id,
       data: {
-        card: {
+        list: {
           name: e.detail.value.name,
         }
       },

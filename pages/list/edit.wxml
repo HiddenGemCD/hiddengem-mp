@@ -2,12 +2,7 @@
 <form bindsubmit="bindSubmit">
     <view class="user-input">
      <view class="text-area-wrap">
-      <textarea placeholder="Name" name="name" auto-height />
-     </view>
-    </view>
-    <view class="user-input">
-     <view class="text-area-wrap">
-      <textarea style="input-size" placeholder="Description" class="input-height" name="description" />
+      <textarea placeholder="Name" value="{{name}}" name="name" auto-height />
      </view>
     </view>
     <button class="submit-button" form-type="submit" >Submit</button>
