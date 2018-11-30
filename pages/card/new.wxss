@@ -1,27 +1,108 @@
+.container {
+ margin-top: 50px;
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ height: 270px;
+ padding: 10px;
+ width: 250px;
+ border-radius: 10px;
+ background: white;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
 
-   /* form style */
-   .user-input {
-     width: 100%;
-     margin-bottom: 35rpx;
-   }
-   .input-height {
-     height: 10em;
-   }
-   .input-label {
-     font-size: 35rpx;
-   }
-   textarea {
-     padding: 10rpx 0;
-     font-size: 35rpx;
-     width: 100%;
-   }
-   .text-area-wrap {
-     padding: 15rpx 15rpx;
-     background-color: #fff;
-     margin-top:8px;
-     border-radius: 5px;
-     border: 1px solid black
-   }
+open-data.avatar {
+ border-radius: 50%;
+ height: 50px;
+ flex: 0 0 50px;
+}
+.card-title {
+ background-color: #fff;
+ border-radius: 10px;
+ height: 25px;
+ width: 180px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+ padding-left: 15px;
+ display: flex;
+ align-items: center;
+}
 
-   
-   
+.desc-container {
+ width: 250px;
+ border-radius: 10px;
+ display: flex;
+ margin-top: 10px;
+ border: black;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card-description {
+ border-radius: 5px;
+ height: 100px;
+ width: 250px;
+ justify-content: start;
+ align-items: center;
+ box-shadow: 0 3px 6px black;
+ padding-left: 10px;
+ padding-top: 5px;
+}
+
+.category {
+ padding: 10px;
+}
+
+.selection-container {
+ display: flex;
+}
+
+.bottom-section {
+ display: flex;
+ padding: 10px;
+ align-items: center;
+ flex-direction: row;
+ justify-content: space-between;
+ flex-direction: row;
+ width: 250px;
+}
+
+.top-section {
+ display:flex;
+ padding: 10px;
+ align-items: center;
+ justify-content: space-between;
+ width: 250px;
+}
+
+.city {
+ border-style: solid;
+ border-width: 1px;
+ border-radius: 5px;
+ justify-content: center;
+ padding: 10px;
+}
+
+.category {
+ border-style: solid;
+ border-width: 1px;
+ border-radius: 5px;
+ margin-right: 5px;
+}
+
+.purple-button {
+ background: #5B5BE2;
+ color: white;
+ font-weight: bold;
+ width: 120px;
+ text-align: center;
+ z-index: 999;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}

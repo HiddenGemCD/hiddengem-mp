@@ -1,98 +1,34 @@
 <!--index.wxml-->
-<!-- bkg -->
-<image src='/images/appbkg.jpg' style='position: absolute; z-index: -10; width:100%;'></image>
-<!-- list headlines -->
-<text style='margin: 30px; font-size:13px; color:white; font-weight:bold;'>Lists</text>
+<view class="container">
+  <image src='/images/appbkg.jpg' style='position: absolute; z-index: -10; width:100%;'></image>
 
-<a style='float:right; margin-right:30px; font-size:13px; color:white; font-weight:bold;'>View All</a>
-
-<!-- List items -->
-
-<view style='display:flex; flex-wrap:wrap; justify-content:center;'>
-<block wx:for='{{ [1,2,3,4,5,6] }}'>
-<view style='display:flex; margin:9rpx; justify-content:center; align-items:center; '>
-<view style='width:40vw; height:45rpx; background-color:white; border-radius:40rpx; box-shadow: 0px 0.2px 3px grey;'>
-
-<!-- list card content -->
-<view style='text-align:center; font-size:11px; color:black; font-weight:bold; margin:1px'>Hotpot Places</view>
-</view>
-
-</view>
-</block>
-</view>
-
-<!-- tags -->
-<view style='display:flex; flex-wrap:wrap; justify-content:center;'>
-
-<!-- cat content -->
-<view class='cat'>
-<view style='text-align:center; font-size:14px; color:black; font-weight:bold; margin: 6px'>Cat</view>
-</view>
-
-<!-- location tag -->
-
-<view class='location-tag'>
-<view><image class='pin' src='/images/pin.png'></image>
-</view>
-
-</view>
-</view>
-
-<view style='padding-top:80rpx;'/>
-
-<!-- card flex cards -->
-<view style='display:flex; flex-wrap:wrap; justify-content:center;'>
-<text style='text-align:center; font-size:18px; color:black; font-weight:bold; margin:3px;'>Chengdu's Hottest Spots</text>
-<block wx:for='{{ [1,2,3,4,5,6] }}'>
-<!-- card container -->
-<view style='display:flex; margin:22rpx; justify-content:center; align-items:center; '>
-<!-- card styling -->
-<view style='width:90vw; height:300rpx; background-color:white; border-radius:40rpx; box-shadow: 0px 2px 7px grey;'>
-<!-- card content -->
-<view style='text-align:left; font-size:18px; color:#424949; font-weight:bold; margin:20px'>Chicken Rice Place</view>
-<view style='text-align:left; font-size:14px; color:#424949; margin-left:20px; margin-top:-10px; margin-right:65px;'>Best milk tea in town towntown towntown towntown</view>
-<!-- avatar -->
-<view style='display: flex; align-items: top; justify-content: right; margin: 7px -3px;'>
-<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-<!-- heart -->
-<view><image class='like' src='/images/heart.png'></image>
-<text class='like_count;'>800</text>
-</view>
-</view>
-</view>
-</view>
-</block> 
-</view>
-
-<view style='padding-top:175rpx;'/>
-
-
-<!-- footer -->
-<view style='position: fixed; left: 0; bottom: 0; width: 100%; height: 11%; background-color: #FBFCFC; color: grey; text-align: center; box-shadow: 0px 0.8px 0px #FF5050 inset;'>
-<!-- button -->
-<button style='border-radius:50px; width: 45px; height: 45px; background-color: #6246FF; color: white; font-size:36px; font-weight:bold; line-height:40px; top: 11%; box-shadow: 0px 0.1px 4px grey; '>+</button>
-</view>
-<!--https://developers.weixin.qq.com/miniprogram/dev/api/open-api/user-info/wx.getUserInfo.html -->
-<open-data type="userNickName"></open-data>
-<open-data type="userCity"></open-data>
-
-<button bindtap="goAllLists">View All List</button>
-<button bindtap="goMyLists">View MY List</button>
-<button bindtap="newCard">Create New Card</button>
-
-<!-- <button bindtap="#">View my posts</button>
-<button bindtap="#">Avatar link to lists</button> -->
-<!-- <view>Show Hottest Lists</view> -->
-
-<block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
-    <view class="card-outer-border">
-      <view class="card-header-item">
-          {{item.name}}
+  <text class="list-text l">熱門清單</text>
+  <a class="list-text r" bindtap="goAllLists" >全部清單</a>
+  <view class="lists">
+    <block wx:for="{{lists}}" wx:for-item="list" wx:for-index="listsIndex" wx:key="{{lists}}">
+      <view class="list">
+        {{list.name}}
       </view>
-      <view class="card-line"/>
-      <view class="card-body-item">
-        "{{item.description}}"
+    </block>
+  </view>
+
+  <button class="btn btn-category">類別</button>
+  <button class="btn btn-city">城市</button>
+
+  <view class="cards">
+    <block wx:for="{{cards}}" wx:for-item="card" wx:for-index="cardsIndex" wx:key="cards">
+      <view class="card">
+        <view class="name">{{card.name}}</view>
+        <image bindtap='viewList' class="avatar" id="{{card.user_id}}" data-avatar_url="{{card.avatar_url}}" src="{{card.avatar_url}}"></image>
+        <view class="description">{{card.description}}</view>
+        <view class="upvote">
+        <image src="/images/heart.png" class="heart" ></image>
+        <text class="count">888</text>
+        </view>
       </view>
-      <text>user: "{{item.user_id}}"</text>
-    </view>
-</block>
+    </block>
+  </view>
+</view>
+
+
+

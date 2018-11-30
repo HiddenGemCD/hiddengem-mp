@@ -1,8 +1,5 @@
-
 const app = getApp()
 const myRequest = require('../../lib/api/request');
-
-
 
 Page({
   data: {},
@@ -10,7 +7,9 @@ Page({
   onLoad: function(){
     console.log("loading gb data for create")
   },
+  
   bindSubmit: function (e) {
+    console.log("sibmit..")
     let page = this;
     wx.showToast({ title: 'Sending...', icon: 'loading', duration: 1000 })
     // Post new card to API
@@ -29,7 +28,7 @@ Page({
 
     setTimeout(function () {
       wx.reLaunch({
-        url: '/pages/index/index'
+        url: '/pages/list/mylist'
       })
     }, 1000)
 

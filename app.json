@@ -9,14 +9,15 @@
     "pages/list/new",
     "pages/list/edit",
     "pages/list/mylist",
+    "pages/list/visitlist",
     "pages/ref/index",
     "pages/ref/story"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#ED393C",
+    "navigationBarTitleText": "城市宝",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "backgroundColor": "#FFFFFE",
@@ -25,14 +26,19 @@
     "color": "#888888",
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "Home",
-      "iconPath": "/commons/assets/icons/home-unactive.png",
-      "selectedIconPath": "/commons/assets/icons/home.png"
+      "text": "首頁",
+      "iconPath": "/commons/assets/icons/home.png",
+      "selectedIconPath": "/commons/assets/icons/home-active.png"
     },{
       "pagePath": "pages/card/new",
-      "text": "Create Card",
-      "iconPath": "/commons/assets/icons/post-unactive.png",
-      "selectedIconPath": "/commons/assets/icons/post.png"
+      "text": "新增",
+      "iconPath": "/commons/assets/icons/add.png",
+      "selectedIconPath": "/commons/assets/icons/add-active.png"
+    },{
+      "pagePath": "pages/list/mylist",
+      "text": "我的",
+      "iconPath": "/commons/assets/icons/user.png",
+      "selectedIconPath": "/commons/assets/icons/user-active.png"
     }]
   },
   "networkTimeout": {

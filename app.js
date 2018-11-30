@@ -21,12 +21,4 @@ App({
   globalData: {
     items: []
   }
-  // getUserInfo: function (e) {
-  //   console.log("HEY GET USER INFO")
-  //   console.log(e)
-  //   app.globalData.userInfo = e.detail.userInfo
-  //   this.setData({
-  //     userInfo: e.detail.userInfo
-  //   })
-  // }
 })

@@ -1,1 +1,186 @@
-/* pages/list/mylist.wxss */
+/* pages/list/visitlist.wxss */
+
+.user {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.avatar {
+  overflow: hidden;
+}
+
+.avatar-text {
+  color: white;
+  font-size: 18px;
+}
+
+.list-text {
+  color: white;
+  padding: 0 15px;
+}
+.r {
+  float: right;
+}
+.lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 15px;
+  margin: 5px 0;
+}
+.list {
+  color: black;
+  height:24px;
+  border-radius: 15px;
+  background: white;
+  text-align: center;
+  width: 140px;
+  line-height: 24px;
+  margin: 3px 0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+  font-size: 10px;
+}
+
+.btn-category {
+  width: 60px;
+  font-size: 14px;
+  padding: 0;
+  background: white;
+  color: black;
+  display: inline-block;
+  margin-left: 15px;
+}
+.btn-city {
+  width: 60px;
+  font-size: 14px;
+  padding: 0;
+  background: white;
+  color: black;
+  display: inline-block;
+  float: right;
+  margin-right: 15px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.card {
+  border-radius: 10px;
+  width: 100%;
+  margin: 5px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  padding: 10px 10px;
+  position: relative
+}
+.name {
+  display: inline-block;
+  font-size: 18px;
+}
+.avatar {
+  background: grey;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.description {
+  font-size: 14px;
+}
+.upvote {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  display: inline-block;
+}
+.heart {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.btn {
+  font-size: 14px;
+  padding: 0 10px;
+  
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin: 3px;
+}
+
+
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cat {
+  width:14vw;
+  height:70rpx;
+  background-color:white;
+  border-radius:40rpx; 
+  box-shadow: 0px 0.2px 3px grey;
+  margin-right: 50px; 
+  margin-top: 5px;
+}
+
+.location-tag {
+  width:14vw;
+  height:70rpx;
+  background-color:white;
+  border-radius:40rpx; 
+  box-shadow: 0px 0.2px 3px grey;
+  margin-right: 0px; 
+  margin-top: 5px;
+}
+
+.userinfo-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  margin-left: 253px; 
+  margin-top: -188rpx;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0px 1px 2px;
+}
+
+.userinfo-nickname {
+  color: rgb(218, 67, 67);
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.pin {
+  width: 38rpx;
+  height: 50rpx;
+  position: relative;
+  margin: 4px;
+  margin-left: 16px;
+}
+
+.like {
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  margin: 5px;
+  margin-left: 20px;
+}
+
+
+.like_count {
+  text-align: center;
+  line-height: 35px;
+  position: absolute
+} */

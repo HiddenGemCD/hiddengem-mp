@@ -1,15 +1,32 @@
-<!--pages/post/post.wxml-->
 <form bindsubmit="bindSubmit">
-    <view class="user-input">
-     <view class="text-area-wrap">
-      <textarea placeholder="Name" name="name" auto-height />
-     </view>
+  <view class="container">
+    <view>分享新宝</view>
+
+    <view class="top-section">
+      <view class="card-title">
+        <textarea placeholder="标题" name="name" auto-height />
+      </view>
+      <view class="avatar">
+        <open-data type="userAvatarUrl" class="avatar"></open-data>
+      </view>
     </view>
-    <view class="user-input">
-     <view class="text-area-wrap">
-      <textarea style="input-size" placeholder="Description" class="input-height" name="description" />
-     </view>
+
+    <view class="desc-container">
+      <view class="card-description">
+        <textarea style="input-size" placeholder="这里很棒因为。。" class="input-height" name="description" />
+      </view>
     </view>
-    <button class="submit-button" form-type="submit" >Submit</button>
+
+    <view class="bottom-section">
+      <view class="selection-container">
+        <view class="category">吃</view>
+        <view class="city">成都</view>
+      </view>
+      
+      <button class="submit-button purple-button" form-type="submit" >发布</button>
+      
+    </view>
+  </view>
+
+  <!-- <button class="submit-button purple-button" form-type="submit" >发布</button> -->
 </form>
-  

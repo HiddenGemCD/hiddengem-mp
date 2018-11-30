@@ -1,12 +1,10 @@
+<!--pages/list/visitlist.wxml-->
 <!--index.wxml-->
 <view class="container">
   <image src='/images/appbkg.jpg' style='position: absolute; z-index: -10; width:100%;'></image>
   <view class="user">
-    <view class="avatar">
-      <open-data type="userAvatarUrl"></open-data>
-    </view>
-    <!-- <image bindtap='viewList' class="avatar" id="{{user_id}}" data-avatar_url="{{avatar_url}}" src="{{avatar_url}}"></image> -->
-    <view class="avatar-text">My lists</view>
+    <image bindtap='viewList' class="avatar" id="{{user_id}}" data-avatar_url="{{avatar_url}}" src="{{avatar_url}}"></image>
+    <view class="avatar-text">{{user.name}}'s lists</view>
   </view>
   
   <view class="lists">
@@ -30,10 +28,6 @@
         <image src="/images/heart.png" class="heart" ></image>
         <text class="count">888</text>
         </view>
-        <image class='icon' id='{{card.id}}' src='/commons/assets/icons/trash.png' bindtap='deleteCard'></image>
-        <image class='icon' id='{{card.id}}' src='/commons/assets/icons/edit.png' bindtap='editCard'></image>
-
-        
       </view>
     </block>
   </view>
